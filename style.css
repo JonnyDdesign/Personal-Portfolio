@@ -13,14 +13,14 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #890ca8;
-  height: 8em;
+  height: 150px;
   width: 100%;
 }
 
 .logo img {
-  width: 18%;
+  width: 30%;
   padding: .2rem;
-  margin: .2rem;
+  margin: .5rem;
 }
 
 .navbar-links ul {
@@ -278,6 +278,7 @@ button:hover {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    height: 120px;
   }
 
   .navbar-links ul {
@@ -299,14 +300,14 @@ button:hover {
   }
 
   .logo img {
-    width: 13%;
+    width: 20%;
     margin: .2rem;
     padding: .2rem;
   }
 
   #main {
     padding-top: 6.5em;
-    height: 570px;
+    height: 580px;
   }
 
   h1 {
