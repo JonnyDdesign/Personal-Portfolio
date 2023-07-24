@@ -97,7 +97,7 @@ h1 {
 
 #about {
   background: linear-gradient(180deg, #f7702d, #890ca8);
-  height: 800px;
+  height: 900px;
   width: 100%;
   padding-top: 3em;
   text-align: center;
@@ -133,7 +133,11 @@ h2 {
 .fa-solid {
   width: auto;
   align-items: center;
-  padding: 1em;
+  padding: 0.7em;
+}
+
+#about button {
+  margin-top: 50px;
 }
 
 #portfolio {
@@ -317,7 +321,7 @@ button:hover {
   }
 
   #about {
-    height: 800px;
+    height: 900px;
   }
 
   h2 {
