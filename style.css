@@ -13,12 +13,12 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #890ca8;
-  height: 150px;
+  height: 120px;
   width: 100%;
 }
 
 .logo img {
-  width: 30%;
+  width: 25%;
   padding: .2rem;
   margin: .5rem;
 }
@@ -38,7 +38,7 @@ body {
   color: #f7702d;
   padding: 1rem;
   display: block;
-  font-size: 1.8em;
+  font-size: 1.6em;
   text-transform: uppercase;
   font-family: 'Tillana', Arial, serif;
 }
@@ -50,24 +50,24 @@ body {
 }
 
 .navbar-links li a:hover {
-  color: white;
+  color: #ffffff;
 }
 
 .toggle-button {
   position: absolute;
-  top: 2.5rem;
+  top: 2rem;
   right: 1rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 20px;
+  width: 35px;
+  height: 22px;
 }
 
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background: white;
+  background: #ffffff;
   border-radius: 10px;
 }
 
@@ -79,8 +79,8 @@ body {
 }
 
 h1 {
-  color: white;
-  font-size: 4.5vw;
+  color: #ffffff;
+  font-size: 4.3vw;
   font-family: 'Playfair Display', Arial, serif;
   letter-spacing: 0.08em;
   text-shadow: 2px 2px 5px rgb(246, 164, 22);
@@ -88,7 +88,7 @@ h1 {
 }
 
 #main p {
-  color: white;
+  color: #ffffff;
   font-size: 2.5vw;
   line-height: 1.5;
   text-align: center;
@@ -106,7 +106,7 @@ h1 {
 h2 {
   font-family: 'Acme', serif;
   font-size: 3vw;
-  color: white;
+  color: #ffffff;
   text-decoration: underline;
   margin: 0px 0px;
   letter-spacing: 0.08em;
@@ -118,12 +118,12 @@ h2 {
   width: 350px;
   height: 250px;
   border-radius: 10px;
-  border: 3px solid black;
+  border: 3px solid #000000;
   margin: 15px auto;
 }
 
 #about p {
-  color: white;
+  color: #ffffff;
   font-size: 2vw;
   line-height: 1.5;
   text-align: center;
@@ -133,7 +133,7 @@ h2 {
 .fa-solid {
   width: auto;
   align-items: center;
-  padding: 0.7em;
+  padding: 1.3em;
 }
 
 #about button {
@@ -145,53 +145,53 @@ h2 {
   height: 775px;
   width: 100%;
   text-align: center;
-  padding-top: 3em;
+  padding-top: 100px;
 }
 
 #portfolio h2 {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
-#portfolio-card1 {
+.portfolio-card1 {
   height: 21rem;
   width: 25rem;
-  background: white;
+  background: #ffffff;
   display: inline-block;
-  border: 2px solid black;
+  border: 2px solid #000000;
   border-radius: 20px;
   margin: 1em;
 }
 
-#portfolio-card1 h3 {
-  color: black;
+.portfolio-card1 h3 {
+  color: #000000;
 }
 
-#portfolio-card2 {
+.portfolio-card2 {
   height: 21rem;
   width: 25rem;
-  background: white;
+  background: #ffffff;
   display: inline-block;
-  border: 2px solid black;
+  border: 2px solid #000000;
   border-radius: 20px;
   margin: 1em;
 }
 
-#portfolio-card2 h3 {
-  color: black;
+.portfolio-card2 h3 {
+  color: #000000;
 }
 
-#portfolio-card3 {
+.portfolio-card3 {
   height: 21rem;
   width: 25rem;
-  background: white;
+  background: #ffffff;
   display: inline-block;
-  border: 2px solid black;
+  border: 2px solid #000000;
   border-radius: 20px;
   margin: 1em;
 }
 
-#portfolio-card3 h3 {
-  color: black;
+.portfolio-card h3 {
+  color: #000000;
 }
 
 #contact {
@@ -203,7 +203,7 @@ h2 {
 }
 
 #contact p {
-  color: white;
+  color: #ffffff;
   padding-top: 2em;
   font-size: 2vw;
   text-align: center;
@@ -213,40 +213,35 @@ h2 {
 .ContactEmail {
   display: inline-block;
   margin-top: 2em;
-  text-decoration: none;
   font-size: 1.5em;
   color:#fca151;
 }
 
-#contact button {
-  margin-top: 3em;
-}
-
 #footer {
-  background: black;
-  height: 40px;
+  background: #000000;
+  height: 50px;
   width: 100%;
   text-align: center;
 }
 
 #footer p {
-  color: white;
+  color: #ffffff;
   font-size: 1.2em;
   font-family: 'Annie Use Your Telescope', cursive;
   margin-top: 0;
 }
 
 button {
-  background-color: white;
+  background-color: #ffffff;
   color: #890ca8;
-  border: 1px solid black;
+  border: 1px solid #000000;
   font-size: 18px;
   border-radius: 15px;
   padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 2px 2px black;
+  box-shadow: 2px 2px #000000;
   cursor: pointer;
 }
 
@@ -255,17 +250,17 @@ button a {
 }
 
 button a:hover {
-  color: white;
+  color: #ffffff;
 }
 
 button:hover {
   background-color: #890ca8;
-  color: white;
+  color: #ffffff;
   border: 1px solid #fca151;
   transition: 0.5s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .toggle-button {
     display: flex;
   }
@@ -278,7 +273,132 @@ button:hover {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    height: 120px;
+    height: 100px;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: .5rem 1rem;
+    font-size: 1.2em;
+    line-height: 0.9;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    background: #000000;
+  }
+
+  .logo img {
+    width: 25%;
+    margin: .2rem;
+    padding: .2rem;
+  }
+
+  #main {
+    padding-top: 6.5em;
+    height: 650px;
+  }
+
+  h1 {
+    font-size: 10vw;
+  }
+
+  #main p {
+    font-size: 4.8vw;
+    text-align: justify;
+    padding: 20px 40px;
+  }
+
+  #about {
+    height: 850px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  #about img {
+    height: 180px;
+    width: 250px;
+  }
+
+  #about p {
+    font-size: 4vw;
+    text-align: justify;
+    padding: 15px 40px;
+  }
+
+  .fa-solid {
+    width: auto;
+    align-items: center;
+    padding: 0.5em;
+  }
+
+  #portfolio {
+    height: 1300px;
+  }
+
+  .portfolio-card1 {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .portfolio-card2 {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .portfolio-card3 {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  #contact {
+    height: 400px;
+    padding-top: 3em;
+  }
+
+  #contact p {
+    font-size: 4.5vw;
+    text-align: center;
+    padding: 15px 40px;
+  }
+
+  .ContactEmail {
+    font-size: 1.3em;
+  }
+
+  #footer {
+    height: 33px;
+  }
+
+  #footer p {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100px;
   }
 
   .navbar-links ul {
@@ -296,7 +416,7 @@ button:hover {
 
   .navbar-links.active {
     display: flex;
-    background: black;
+    background: #000000;
   }
 
   .logo img {
@@ -307,12 +427,11 @@ button:hover {
 
   #main {
     padding-top: 6.5em;
-    height: 580px;
+    height: 600px;
   }
 
   h1 {
     font-size: 2.5em;
-
   }
 
   #main p {
