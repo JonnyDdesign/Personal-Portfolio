@@ -260,6 +260,7 @@ button:hover {
   transition: 0.5s;
 }
 
+/* Media query for mobile devices */
 @media (max-width: 480px) {
   .toggle-button {
     display: flex;
@@ -362,29 +363,28 @@ button:hover {
   }
 
   #contact {
-    height: 400px;
-    padding-top: 3em;
+    height: 390px;
   }
 
   #contact p {
-    font-size: 4.5vw;
-    text-align: center;
+    font-size: 3.8vw;
     padding: 15px 40px;
   }
 
   .ContactEmail {
-    font-size: 1.3em;
+    font-size: 3.8vw;
   }
 
   #footer {
-    height: 33px;
+    height: 28px;
   }
 
   #footer p {
-    font-size: 1.2em;
+    font-size: 3vw;
   }
 }
 
+/* Media query for low resolution tablets, ipads */
 @media (min-width: 481px) and (max-width: 767px) {
   .toggle-button {
     display: flex;
@@ -463,9 +463,297 @@ button:hover {
     height: 1400px;
   }
 
+  #contact {
+    height: 385px;
+  }
+
   #contact p {
-    font-size: 3.9vw;
+    font-size: 3.8vw;
     text-align: center;
+    padding: 10px 0px;
+  }
+
+  #footer {
+    height: 30px;
+  }
+
+  #footer p {
+    font-size: 3vw;
+  }
+}
+
+/* Media query for tablets ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    height: 100px;
+  }
+  
+  .logo img {
+    width: 25%;
+    margin: .2rem;
+    padding-top: 2rem;
+  }
+
+  #main {
+    padding-top: 6.5em;
+    height: 600px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  #main p {
+    font-size: 3vw;
+    text-align: justify;
     padding: 10px 40px;
+  }
+
+  #about {
+    height: 850px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  #about img {
+    height: 200px;
+    width: 280px;
+  }
+
+  #about p {
+    font-size: 2.6vw;
+    text-align: justify;
+    padding: 10px 40px;
+  }
+
+  .fa-solid {
+    align-items: center;
+    padding: 0.9em;
+  }
+
+  #portfolio {
+    height: 900px;
+  }
+
+  .portfolio-card1 {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .portfolio-card2 {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .portfolio-card3 {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  #contact {
+    height: 450px;
+  }
+
+  #contact p {
+    font-size: 2.8vw;
+    padding: 10px 40px;
+  }
+
+  .ContactEmail {
+    font-size: 2.8vw;
+  }
+
+  #footer {
+    height: 30px;
+  }
+
+  #footer p {
+    font-size: 2vw;
+  }
+}
+
+/* Media query for laptops and desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .navbar {
+    height: 100px;
+  }
+
+  .logo img {
+    width: 25%;
+    margin: .2rem;
+    padding-top: 2rem;
+  }
+
+  #main {
+    padding-top: 6.5em;
+    height: 600px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  #main p {
+    font-size: 3vw;
+    text-align: justify;
+    padding: 10px 40px;
+  }
+
+  #about {
+    height: 850px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  #about img {
+    height: 200px;
+    width: 280px;
+  }
+
+  #about p {
+    font-size: 2.6vw;
+    text-align: justify;
+    padding: 10px 40px;
+  }
+
+  .fa-solid {
+    align-items: center;
+    padding: 0.9em;
+  }
+
+  #portfolio {
+    height: 900px;
+  }
+
+  .portfolio-card1 {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .portfolio-card2 {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .portfolio-card3 {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  #contact {
+    height: 450px;
+  }
+
+  #contact p {
+    font-size: 2.8vw;
+    padding: 10px 40px;
+  }
+
+  .ContactEmail {
+    font-size: 2.8vw;
+  }
+
+  #footer {
+    height: 30px;
+  }
+
+  #footer p {
+    font-size: 2vw;
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 1281px) {
+  .navbar {
+    height: 100px;
+  }
+
+  .logo img {
+    width: 25%;
+    margin: .2rem;
+    padding-top: 2rem;
+  }
+
+  #main {
+    padding-top: 6.5em;
+    height: 700px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  #main p {
+    font-size: 2.5vw;
+    text-align: justify;
+    padding: 30px 100px;
+  }
+
+  #about {
+    height: 1100px;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  #about img {
+    height: 250px;
+    width: 360px;
+  }
+
+  #about p {
+    font-size: 2.5vw;
+    text-align: justify;
+    padding: 10px 100px;
+  }
+
+  .fa-solid {
+    align-items: center;
+    padding: 1.3em;
+  }
+
+  #portfolio {
+    height: 870px;
+  }
+
+  .portfolio-card1 {
+    height: 22rem;
+    width: 25rem;
+  }
+
+  .portfolio-card2 {
+    height: 22rem;
+    width: 25rem;
+  }
+
+  .portfolio-card3 {
+    height: 22rem;
+    width: 25rem;
+  }
+
+  #contact {
+    height: 550px;
+  }
+
+  #contact p {
+    font-size: 2.5vw;
+    padding: 10px 100px;
+  }
+
+  .ContactEmail {
+    font-size: 2.5vw;
+  }
+
+  #footer {
+    height: 33px;
+  }
+
+  #footer p {
+    font-size: 1.8vw;
   }
 }
