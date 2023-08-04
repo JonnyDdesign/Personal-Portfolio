@@ -39,6 +39,7 @@ body {
   padding: 1rem;
   display: block;
   font-size: 1.6em;
+  line-height: 25px;
   text-transform: uppercase;
   font-family: 'Tillana', Arial, serif;
 }
@@ -89,7 +90,7 @@ h1 {
 
 #main p {
   color: #ffffff;
-  font-size: 2.5vw;
+  font-size: 2.3vw;
   line-height: 1.5;
   text-align: center;
   padding: 10px 150px;
@@ -124,7 +125,7 @@ h2 {
 
 #about p {
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 2.3vw;
   line-height: 1.5;
   text-align: center;
   padding: 10px 80px;
@@ -153,7 +154,7 @@ h2 {
 }
 
 .portfolio-card1 {
-  height: 21rem;
+  height: 20rem;
   width: 25rem;
   background: #ffffff;
   display: inline-block;
@@ -162,12 +163,12 @@ h2 {
   margin: 1em;
 }
 
-.portfolio-card1 h3 {
-  color: #000000;
+.portfolio-card1 img {
+  padding-top: 2em;
 }
 
 .portfolio-card2 {
-  height: 21rem;
+  height: 20rem;
   width: 25rem;
   background: #ffffff;
   display: inline-block;
@@ -176,12 +177,12 @@ h2 {
   margin: 1em;
 }
 
-.portfolio-card2 h3 {
-  color: #000000;
+.portfolio-card2 img {
+  padding-top: 2em;
 }
 
 .portfolio-card3 {
-  height: 21rem;
+  height: 20rem;
   width: 25rem;
   background: #ffffff;
   display: inline-block;
@@ -190,8 +191,8 @@ h2 {
   margin: 1em;
 }
 
-.portfolio-card h3 {
-  color: #000000;
+.portfolio-card3 img {
+  padding-top: 2em;
 }
 
 #contact {
@@ -205,7 +206,7 @@ h2 {
 #contact p {
   color: #ffffff;
   padding-top: 2em;
-  font-size: 2vw;
+  font-size: 2.3vw;
   text-align: center;
   line-height: 1.5;
 }
@@ -213,8 +214,14 @@ h2 {
 .ContactEmail {
   display: inline-block;
   margin-top: 2em;
-  font-size: 1.5em;
-  color:#fca151;
+  font-size: 2.3em;
+  color:#f7702d;
+}
+
+.fa-brands {
+  width: auto;
+  align-items: center;
+  padding: 1.5em;
 }
 
 #footer {
@@ -226,7 +233,7 @@ h2 {
 
 #footer p {
   color: #ffffff;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-family: 'Annie Use Your Telescope', cursive;
   margin-top: 0;
 }
@@ -256,7 +263,7 @@ button a:hover {
 button:hover {
   background-color: #890ca8;
   color: #ffffff;
-  border: 1px solid #fca151;
+  border: 1px solid #f7702d;
   transition: 0.5s;
 }
 
@@ -289,7 +296,7 @@ button:hover {
   .navbar-links li a {
     padding: .5rem 1rem;
     font-size: 1.2em;
-    line-height: 0.9;
+    line-height: 1;
   }
 
   .navbar-links.active {
@@ -684,11 +691,11 @@ button:hover {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 3.3em;
   }
 
   #main p {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     text-align: justify;
     padding: 30px 100px;
   }
@@ -707,7 +714,7 @@ button:hover {
   }
 
   #about p {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     text-align: justify;
     padding: 10px 100px;
   }
@@ -741,12 +748,12 @@ button:hover {
   }
 
   #contact p {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     padding: 10px 100px;
   }
 
   .ContactEmail {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
   }
 
   #footer {
@@ -754,6 +761,6 @@ button:hover {
   }
 
   #footer p {
-    font-size: 1.8vw;
+    font-size: 1.5vw;
   }
 }
