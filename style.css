@@ -268,7 +268,7 @@ button:hover {
 }
 
 /* Media query for mobile devices */
-@media (max-width: 480px) {
+@media (min-width: 375px) and (max-width: 480px) {
   .toggle-button {
     display: flex;
   }
@@ -320,13 +320,9 @@ button:hover {
   }
 
   #main p {
-    font-size: 4.8vw;
+    font-size: 4.6vw;
     text-align: justify;
     padding: 20px 40px;
-  }
-
-  #about {
-    height: 850px;
   }
 
   h2 {
@@ -339,7 +335,7 @@ button:hover {
   }
 
   #about p {
-    font-size: 4vw;
+    font-size: 4.4vw;
     text-align: justify;
     padding: 15px 40px;
   }
@@ -374,7 +370,7 @@ button:hover {
   }
 
   #contact p {
-    font-size: 3.8vw;
+    font-size: 3.6vw;
     padding: 15px 40px;
   }
 
@@ -383,15 +379,15 @@ button:hover {
   }
 
   .fa-brands {
-    padding: 1em;
+    padding: 1.2em;
   }
 
   #footer {
-    height: 25px;
+    height: 23px;
   }
 
   #footer p {
-    font-size: 3.2vw;
+    font-size: 3.3vw;
   }
 }
 
@@ -482,6 +478,10 @@ button:hover {
     font-size: 3.8vw;
     text-align: center;
     padding: 10px 0px;
+  }
+
+  .ContactEmail {
+    font-size: 18px;
   }
 
   #footer {
