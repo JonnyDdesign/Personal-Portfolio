@@ -137,62 +137,112 @@ h2 {
   padding: 1.3em;
 }
 
-#about button {
+#about a {
   margin-top: 50px;
 }
 
 #portfolio {
   background: linear-gradient(180deg, #890ca8, #f7702d);
-  height: 775px;
+  height: 1000px;
   width: 100%;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 #portfolio h2 {
   padding-bottom: 20px;
 }
 
+.portfolio_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(100px, auto);
+  gap: 50px;
+  margin: 50px;
+}
+
 .portfolio-card1 {
-  height: 20rem;
-  width: 25rem;
-  background: #ffffff;
-  display: inline-block;
+  grid-column: 1;
+  grid-row: 1;
+  height: 22em;
+  width: 22em;
+  background-image: url(images/camera\ background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 2px solid #000000;
   border-radius: 20px;
-  margin: 1em;
+  place-self: center;
 }
 
 .portfolio-card1 img {
   padding-top: 2em;
 }
 
+.portfolio-card1 p {
+  margin: 1em 1em;
+}
+
 .portfolio-card2 {
-  height: 20rem;
-  width: 25rem;
-  background: #ffffff;
-  display: inline-block;
+  grid-column: 2;
+  grid-row: 1;
+  height: 25em;
+  width: 25em;
+  background-image: url(images/Ski\ Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 2px solid #000000;
   border-radius: 20px;
-  margin: 1em;
+  justify-self: center;
 }
 
 .portfolio-card2 img {
   padding-top: 2em;
 }
 
+.portfolio-card2 p {
+  margin: 1em 1em;
+}
+
 .portfolio-card3 {
-  height: 20rem;
-  width: 25rem;
-  background: #ffffff;
-  display: inline-block;
+  grid-column: 1;
+  grid-row: 2;
+  height: 25em;
+  width: 25em;
+  background-image: url(images/Sports\ Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 2px solid #000000;
   border-radius: 20px;
-  margin: 1em;
+  justify-self: center;
 }
 
 .portfolio-card3 img {
   padding-top: 2em;
+}
+
+.portfolio-card3 p {
+  margin: 1em 1em;
+}
+
+.portfolio-card4 {
+  grid-column: 2;
+  grid-row: 2;
+  height: 25em;
+  width: 25em;
+  background-image: url(images/Investment\ Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  justify-self: center;
+}
+
+.portfolio-card4 img {
+  padding-top: 2em;
+}
+
+.portfolio-card4 p {
+  margin: 1em 1em;
 }
 
 #contact {
@@ -214,6 +264,7 @@ h2 {
 .ContactEmail {
   display: inline-block;
   margin-top: 2em;
+  margin-bottom: 1em;
   font-size: 2.3em;
   color:#f7702d;
 }
@@ -238,7 +289,7 @@ h2 {
   margin-top: 0;
 }
 
-button {
+.portfolio_button {
   background-color: #ffffff;
   color: #890ca8;
   border: 1px solid #000000;
@@ -250,17 +301,18 @@ button {
   display: inline-block;
   box-shadow: 2px 2px #000000;
   cursor: pointer;
+  margin: 0.5em 1em;
 }
 
-button a {
+.portfolio_button a {
   text-decoration: none;
 }
 
-button a:hover {
+.portfolio_button a:hover {
   color: #ffffff;
 }
 
-button:hover {
+.portfolio_button:hover {
   background-color: #890ca8;
   color: #ffffff;
   border: 1px solid #f7702d;
@@ -329,6 +381,10 @@ button:hover {
     font-size: 2em;
   }
 
+  #about {
+    height: 1000px;
+  }
+
   #about img {
     height: 180px;
     width: 250px;
@@ -347,22 +403,45 @@ button:hover {
   }
 
   #portfolio {
-    height: 1300px;
+    height: 1800px;
+  }
+
+  .portfolio_container {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 20px;
   }
 
   .portfolio-card1 {
-    height: 20rem;
-    width: 20rem;
+    grid-column: auto;
+    grid-row: auto;
+    height: 22em;
+    width: 22em;
   }
 
   .portfolio-card2 {
-    height: 20rem;
-    width: 20rem;
+    grid-column: auto;
+    grid-row: auto;
+    height: 22em;
+    width: 22em;
   }
 
   .portfolio-card3 {
-    height: 20rem;
-    width: 20rem;
+    grid-column: auto;
+    grid-row: auto;
+    height: 22em;
+    width: 22em;
+  }
+
+  .portfolio-card4 {
+    grid-column: auto;
+    grid-row: auto;
+    height: 22em;
+    width: 22em;
+  }
+
+  .portfolio_button {
+    margin-top: 2px;
   }
 
   #contact {
@@ -448,7 +527,7 @@ button:hover {
   }
 
   #about {
-    height: 900px;
+    height: 1100px;
   }
 
   h2 {
@@ -467,21 +546,59 @@ button:hover {
   }
 
   #portfolio {
-    height: 1400px;
+    height: 1800px;
+  }
+
+  .portfolio_container {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  .portfolio-card1 {
+    grid-column: auto;
+    grid-row: auto;
+    height: 22em;
+    width: 22em;
+  }
+
+  .portfolio-card2 {
+    grid-column: auto;
+    grid-row: auto;
+    height: 22em;
+    width: 22em;
+  }
+
+  .portfolio-card3 {
+    grid-column: auto;
+    grid-row: auto;
+    height: 22.6em;
+    width: 22em;
+  }
+
+  .portfolio-card4 {
+    grid-column: auto;
+    grid-row: auto;
+    height: 22em;
+    width: 22em;
+  }
+
+  .portfolio_button {
+    margin-top: 2px;
   }
 
   #contact {
-    height: 385px;
+    height: 425px;
   }
 
   #contact p {
-    font-size: 3.8vw;
+    font-size: 3.6vw;
     text-align: center;
     padding: 10px 0px;
   }
 
   .ContactEmail {
-    font-size: 18px;
+    font-size: 3.4vw;
   }
 
   #footer {
@@ -489,7 +606,7 @@ button:hover {
   }
 
   #footer p {
-    font-size: 3vw;
+    font-size: 2.8vw;
   }
 }
 
@@ -521,11 +638,11 @@ button:hover {
   }
 
   #about {
-    height: 850px;
+    height: 900px;
   }
 
   h2 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   #about img {
@@ -545,22 +662,43 @@ button:hover {
   }
 
   #portfolio {
-    height: 900px;
+    height: 1100px;
   }
 
   .portfolio-card1 {
-    height: 15rem;
-    width: 15rem;
+    height: 22rem;
+    width: 22rem;
+  }
+
+  .portfolio-card1 .portfolio_button {
+    margin-top: 3px;
   }
 
   .portfolio-card2 {
-    height: 15rem;
-    width: 15rem;
+    height: 22rem;
+    width: 22rem
+  }
+
+  .portfolio-card2 .portfolio_button {
+    margin-top: 3px;
   }
 
   .portfolio-card3 {
-    height: 15rem;
-    width: 15rem;
+    height: 22.6rem;
+    width: 22rem
+  }
+
+  .portfolio-card3 .portfolio_button {
+    margin-top: 0;
+  }
+
+  .portfolio-card4 {
+    height: 22rem;
+    width: 22rem
+  }
+
+  .portfolio-card4 .portfolio_button {
+    margin-top: 3px;
   }
 
   #contact {
@@ -603,7 +741,7 @@ button:hover {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 4em;
   }
 
   #main p {
@@ -613,11 +751,11 @@ button:hover {
   }
 
   #about {
-    height: 850px;
+    height: 950px;
   }
 
   h2 {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   #about img {
@@ -637,26 +775,31 @@ button:hover {
   }
 
   #portfolio {
-    height: 900px;
+    height: 1100px;
   }
 
   .portfolio-card1 {
-    height: 15rem;
-    width: 15rem;
+    height: 23em;
+    width: 23rem;
   }
 
   .portfolio-card2 {
-    height: 15rem;
-    width: 15rem;
+    height: 23rem;
+    width: 23rem;
   }
 
   .portfolio-card3 {
-    height: 15rem;
-    width: 15rem;
+    height: 23.6rem;
+    width: 23rem;
+  }
+
+  .portfolio-card4 {
+    height: 23rem;
+    width: 23rem;
   }
 
   #contact {
-    height: 450px;
+    height: 550px;
   }
 
   #contact p {
@@ -729,21 +872,26 @@ button:hover {
   }
 
   #portfolio {
-    height: 870px;
+    height: 1100px;
   }
 
   .portfolio-card1 {
-    height: 22rem;
+    height: 25rem;
     width: 25rem;
   }
 
   .portfolio-card2 {
-    height: 22rem;
+    height: 25rem;
     width: 25rem;
   }
 
   .portfolio-card3 {
-    height: 22rem;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .portfolio-card4 {
+    height: 25rem;
     width: 25rem;
   }
 
