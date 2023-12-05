@@ -88,6 +88,21 @@ h1 {
   text-align: center;
 }
 
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
 #main p {
   color: #ffffff;
   font-size: 2.3vw;
@@ -276,7 +291,7 @@ h2 {
 }
 
 #footer {
-  background: #000000;
+  background: #890ca8;
   height: 50px;
   width: 100%;
   text-align: center;
@@ -317,6 +332,17 @@ h2 {
   color: #ffffff;
   border: 1px solid #f7702d;
   transition: 0.5s;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* Media query for mobile devices */
