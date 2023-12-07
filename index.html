@@ -17,22 +17,24 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="logo"><img src="images/Jonny D Design Suns Logo.png" alt="Jonny D Design logo"></div>
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-    <div class="navbar-links">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header>
+    <div class="container">
+        <a href="index.html"><img class="logo" src="images/Jonny D Design Suns Logo.png" alt="The Summit at Mount Lemmon Logo"></a>
+        <nav class="site-nav">
+            <button class="menu-toggle" 
+                aria-controls="primary-navigation"
+                aria-expanded="false">
+                <span class="visually-hidden">Menu</span>
+                <div class="hamburger" aria-hidden="true"></div>
+            </button>
+            <ul data-state="closed" class="primary-navigation" id="primary-navigation">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-  </nav>
-
+  </header>
   <main id="main">
     <h1 class="fadeInUp-animation">Welcome!</h1>
     <p>You have just landed at my design studio.
@@ -58,31 +60,31 @@
         <i class="fa-solid fa-paw fa-xl" style="color: #f7702d;"></i>
         <i class="fa-solid fa-utensils fa-xl" style="color: #ffffff;"></i>
         <i class="fa-solid fa-camera-retro fa-xl" style="color: #f7702d;"></i><br>
-        <a target="_blank" class="portfolio_button" href="Resume.pdf">View Resume</a>
+        <a target="_blank" class="about-button" href="Resume.pdf">View Resume</a>
   </section>
 
   <section id="portfolio">
     <h2>Portfolio</h2>
-      <div class="portfolio_container">
+      <div class="portfolio-container">
         <div class="portfolio-card1 reveal">
           <img src="images/AZDesertDesigner Snapshot.png" alt="preview of AZDesertDesigner landing page displayed on a laptop" style="width:100%">
           <p>A photography site I designed and developed utilizing HTML, CSS, and JavaScript.</p>
-          <a target="_blank" class="portfolio_button" href="https://azdesertdesigner.com">Link Here<a/>
+          <a target="_blank" class="portfolio-button" href="https://azdesertdesigner.com">Link Here<a/>
         </div>
         <div class="portfolio-card2 reveal">
           <img src="images/The Summit Snapshot.png" alt="preview of The Summit at Mount Lemmon landing page displayed on a laptop" style="width:100%">
           <p>A ski resort site I designed and developed utilizing HTML, CSS, and JavaScript.</p>
-          <a target="_blank" class="portfolio_button" href="https://jonnyddesign.github.io/TheSummitAtMountLemmon/">Link Here<a/>
+          <a target="_blank" class="portfolio-button" href="https://jonnyddesign.github.io/TheSummitAtMountLemmon/">Link Here<a/>
         </div>
         <div class="portfolio-card3 reveal">
           <img src="images/Traveling Around AZ Snapshot.png" alt="preview of the Traveling Around AZ landing page displayed on a laptop" style="width:100%">
           <p>A travel blog site I designed and developed to using HTML, CSS, and JavaScript.</p>
-          <a target="_blank" class="portfolio_button" href="https://travelingaroundaz.com">Link Here<a/>
+          <a target="_blank" class="portfolio-button" href="https://travelingaroundaz.com">Link Here<a/>
         </div>
         <div class="portfolio-card4 reveal">
           <img src="images/D&S Investments Snapshot.png" alt="preview of D&S Investment Advisors landing page" style="width:100%">
           <p>An investment site I designed and developed using HTML, CSS, and JavaScript.</p>
-          <a target="_blank" class="portfolio_button" href="https://dandsinvestment.com">Link Here<a/>
+          <a target="_blank" class="portfolio-button" href="https://dandsinvestment.com">Link Here<a/>
         </div>
     </div>
   </section>
@@ -91,7 +93,7 @@
     <h2>Connect With Me</h2>
     <p>Have an idea of something you would like to create?
     Send me an email and let's see what we can create together.</p>
-    <a href="mailto:jondesserres@gmail.com" class="ContactEmail">jondesserres@gmail.com</a><br>
+    <a href="mailto:jondesserres@gmail.com" class="contact-email">jondesserres@gmail.com</a><br>
     <a href="https://github.com/JonnyDdesign" aria-label="GitHub"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i></a>
     <a href="https://www.linkedin.com/in/jon-desserres-65b343282/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2xl" style="color: #f7702d;"></i></a>
     <a href="https://codepen.io/JonnyDdesign" aria-label="Codepen"><i class="fa-brands fa-codepen fa-2xl" style="color: #ffffff;"></i></a>
