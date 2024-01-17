@@ -1,8 +1,43 @@
+@font-face {
+  font-family: 'Tillana';
+  font-weight: 500;
+  src: url('assets/fonts/tillana-medium-webfont.woff2') format('woff2'),
+       url('assets/fonts/tillana-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Tillana';
+  font-weight: 700;
+  src: url('assets/fonts/Tillana-Bold.woff2') format('woff2'),
+       url('assets/fonts/Tillana-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  src: url('assets/fonts/PlayfairDisplay-Medium.woff2') format('woff2'),
+       url('assets/fonts/PlayfairDisplay-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Acme';
+  font-weight: 400;
+  src: url('assets/fonts/Acme-Regular.woff2') format('woff2'),
+       url('assets/fonts/Acme-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Annie Use Your Telescope';
+  font-weight: 400;
+  src: url('assets/fonts/AnnieUseYourTelescope-Regular.woff2') format('woff2'),
+       url('assets/fonts/AnnieUseYourTelescope-Regular.woff') format('woff');
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /*Navbar styling*/
@@ -276,7 +311,7 @@ h2 {
   grid-row: auto;
   height: 22em;
   width: 22em;
-  background-image: url(images/camera\ background.png);
+  background-image: url(images/Camera\ Background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid #000000;
@@ -297,7 +332,7 @@ h2 {
   grid-row: auto;
   height: 22em;
   width: 22em;
-  background-image: url(images/Ski\ Background.png);
+  background-image: url(images/Ski\ Background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid #000000;
@@ -318,7 +353,7 @@ h2 {
   grid-row: auto;
   height: 22em;
   width: 22em;
-  background-image: url(images/Travel\ Background.png);
+  background-image: url(images/Travel\ Background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid #000000;
@@ -339,7 +374,7 @@ h2 {
   grid-row: auto;
   height: 22em;
   width: 22em;
-  background-image: url(images/Investment\ Background.png);
+  background-image: url(images/Investment\ Background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid #000000;
