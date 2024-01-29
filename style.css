@@ -104,10 +104,10 @@ header img {
 
 .site-nav a {
   font-family: 'Tillana', serif;
-  font-size: 20px;
+  font-size: clamp(2rem, 2.5vw, 3rem);
   color: #ffffff;
   display: block;
-  padding: 1em 5em 1.5em 1.5em;
+  padding: 1.5rem 2rem;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -178,7 +178,7 @@ header img {
 /*Header text styling*/
 h1 {
   color: #ffffff;
-  font-size: 8vw;
+  font-size: clamp(3rem, 7vw, 6rem);
   font-family: 'Playfair Display', Arial, serif;
   letter-spacing: 0.08em;
   text-shadow: 2px 2px 5px rgb(246, 164, 22);
@@ -187,10 +187,10 @@ h1 {
 
 h2 {
   font-family: 'Acme', serif;
-  font-size: 6vw;
+  font-size: clamp(2rem, 5vw, 4rem);
   color: #ffffff;
   text-decoration: underline;
-  margin: 0px 0px;
+  margin: 0;
   letter-spacing: 0.08em;
   text-align: center;
 }
@@ -198,9 +198,10 @@ h2 {
 /*Main section styling*/
 #main {
   background: linear-gradient(180deg, #890ca8, #f7702d);
-  height: 750px;
+  min-height: 100vh;
+  min-height: 100svh;
   width: 100%;
-  padding-top: 8em;
+  padding-top: 4rem;
 }
 
 @keyframes fadeInUp {
@@ -215,41 +216,48 @@ h2 {
 }
 
 .fadeInUp-animation {
-  animation: 1.5s fadeInUp;
+  animation: 1.3s fadeInUp;
 }
 
 #main p {
   color: #ffffff;
-  font-size: 4.5vw;
+  font-size: clamp(1.4rem, 3vw, 3.5rem);
   line-height: 1.5;
   text-align: left;
-  padding: 40px 40px;
+  padding: 2rem 4rem;
+}
+
+#main img {
+  display: block;
+  margin: 2rem auto 0 auto;
+  width: 38%;
+  padding-bottom: 10rem;
 }
 
 /*About section styling*/
 #about {
   background: linear-gradient(180deg, #f7702d, #890ca8);
-  height: 1100px;
+  min-height: 100vh;
+  min-height: 100svh;
   width: 100%;
-  padding-top: 3em;
+  padding-top: 1rem;
   text-align: center;
 }
 
 #about img {
   display: block;
-  width: 50%;
-  height: auto;
+  margin: 1.5rem auto;
+  width: 38%;
   border-radius: 10px;
-  border: 3px solid #000000;
-  margin: 25px auto;
+  border: 2px solid black;
 }
 
 #about p {
   color: #ffffff;
-  font-size: 4.5vw;
+  font-size: clamp(1.4rem, 3vw, 3.5rem);
   line-height: 1.5;
   text-align: left;
-  padding: 0 40px;
+  padding: 1rem 4rem;
 }
 
 .fa-solid {
@@ -264,8 +272,8 @@ h2 {
 
 .about-button {
   display: inline-block;
-  padding: 18px;
-  font-size: 20px;
+  padding: 1rem;
+  font-size: clamp(1.2rem, 3vw, 2rem);
   background-color: #ffffff;
   color: #890ca8;
   border: 2px solid #000000;
@@ -273,7 +281,7 @@ h2 {
   text-align: center;
   text-decoration: none;
   box-shadow: 3px 3px #f7702d;
-  margin: 0.5em 1em;
+  margin: 0.5em 0;
   cursor: pointer;
 }
 
@@ -281,17 +289,18 @@ h2 {
   background-color: #f7702d;
   color: #ffffff;
   border: 1px solid #ffffff;
-  transition: 0.5s;
+  transition: 0.3s;
   box-shadow: 3px 3px #000000;
 }
 
 /*Portfolio section styling*/
 #portfolio {
   background: linear-gradient(180deg, #890ca8, #f7702d);
-  height: 1800px;
+  min-height: 100vh;
+  min-height: 100svh;
   width: 100%;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 4rem;
 }
 
 #portfolio h2 {
@@ -302,101 +311,40 @@ h2 {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  gap: 20px;
-  margin: 20px;
+  gap: 40px;
+  margin: 1.5rem 1rem 0 1rem;
 }
 
-.portfolio-card1 {
+.portfolio-card {
   grid-column: auto;
   grid-row: auto;
-  height: 22em;
-  width: 22em;
-  background-image: url(images/Camera\ Background.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 2px solid #000000;
+  height: 100%;
+  width: 80%;
+  border: 2px solid white;
+  box-shadow: 0 0 20px 10px white;
   border-radius: 20px;
   place-self: center;
+  margin: 2rem 0;
 }
 
-.portfolio-card1 img {
+.portfolio-card img {
+  width: 100%;
   padding-top: 1.5em;
 }
 
-.portfolio-card1 p {
+.portfolio-card p {
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
   margin: 1em 1em;
-}
-
-.portfolio-card2 {
-  grid-column: auto;
-  grid-row: auto;
-  height: 22em;
-  width: 22em;
-  background-image: url(images/Ski\ Background.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 2px solid #000000;
-  border-radius: 20px;
-  justify-self: center;
-}
-
-.portfolio-card2 img {
-  padding-top: 1.5em;
-}
-
-.portfolio-card2 p {
-  margin: 1em 1em;
-}
-
-.portfolio-card3 {
-  grid-column: auto;
-  grid-row: auto;
-  height: 22em;
-  width: 22em;
-  background-image: url(images/Travel\ Background.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 2px solid #000000;
-  border-radius: 20px;
-  justify-self: center;
-}
-
-.portfolio-card3 img {
-  padding-top: 1.5em;
-}
-
-.portfolio-card3 p {
-  margin: 1em 1em;
-}
-
-.portfolio-card4 {
-  grid-column: auto;
-  grid-row: auto;
-  height: 22em;
-  width: 22em;
-  background-image: url(images/Investment\ Background.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 2px solid #000000;
-  border-radius: 20px;
-  justify-self: center;
-}
-
-.portfolio-card4 img {
-  padding-top: 1.5em;
-}
-
-.portfolio-card4 p {
-  margin: 1em 1em;
+  color: white;
 }
 
 .portfolio-button {
   background-color: #ffffff;
   color: #890ca8;
   border: 1px solid #000000;
-  font-size: 18px;
+  font-size: clamp(1.2rem, 3vw, 2rem);
   border-radius: 15px;
-  padding: 10px;
+  padding: 1rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -409,22 +357,60 @@ h2 {
   background-color: #890ca8;
   color: #ffffff;
   border: 1px solid #f7702d;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 /*Contact section styling*/
 #contact {
   background: linear-gradient(180deg, #f7702d, #890ca8);
-  height: 450px;
+  min-height: 100vh;
   width: 100%;
   text-align: center;
   padding-top: 3em;
 }
 
+form {
+  background: linear-gradient(180deg, #890ca8, #f7702d);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  margin: 3rem auto;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 30px;
+}
+
+form label {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-family: 'Tillana', serif;
+  color: white;
+  text-align: left;
+}
+
+form input, form textarea {
+  font-family: 'Annie Use Your Telescope', cursive;
+  border: 0;
+  margin: 10px 0;
+  padding: 15px;
+  outline: none;
+  background: white;
+  font-size: clamp(1.3rem, 1.8vw, 1.8rem);
+  border-radius: 10px;
+}
+
+input[type=submit] {
+  background: #890ca8;
+  color: white;
+  font-size: clamp(2rem, 2vw, 3rem);
+  width: 40%;
+  place-self: center;
+  cursor: pointer;
+}
+
 #contact p {
   color: #ffffff;
-  padding: 20px 40px;
-  font-size: 4.5vw;
+  padding: 2rem 4rem;
+  font-size: clamp(1.5rem, 3vw, 3.5rem);
   text-align: left;
   line-height: 1.5;
 }
@@ -433,7 +419,7 @@ h2 {
   display: inline-block;
   margin-top: 2em;
   margin-bottom: 1em;
-  font-size: 6vw;
+  font-size: clamp(1rem, 4.5vw, 4rem);
   color:#f7702d;
 }
 
@@ -442,22 +428,19 @@ h2 {
 }
 
 .fa-brands {
-  padding: 1em;
+  padding: 2em 1em;
 }
 
 /*Footer section styling*/
 #footer {
   background: #890ca8;
-  height: 35px;
+  left: 0;
+  bottom: 0;
   width: 100%;
+  color: white;
   text-align: center;
-}
-
-#footer p {
-  color: #ffffff;
-  font-size: 4.5vw;
+  font-size: clamp(1rem, 3vw, 2rem);
   font-family: 'Annie Use Your Telescope', cursive;
-  margin-top: 0;
 }
 
 /*Reveal animation*/
@@ -477,122 +460,12 @@ h2 {
   header img {
     width: 16%;
   }
-
-  #main {
-    padding-top: 8em;
-    height: 750px;
-  }
-
-  h1 {
-    font-size: 10vw;
-  }
-
-  #main p {
-    font-size: 4.6vw;
-    text-align: left;
-    padding: 40px 50px;
-  }
-
-  h2 {
-    font-size: 8vw;
-  }
-
-  #about {
-    height: 1450px;
-  }
-
-  #about img {
-    width: 50%;
-    height: auto;
-  }
-
-  #about p {
-    font-size: 4.6vw;
-    text-align: left;
-    padding: 15px 50px;
-  }
-
-  .fa-solid {
-    font-size: 30px;
-    width: auto;
-    height: auto;
-    align-items: center;
-    padding: 1em 0.5em;
-  }
-
-  #portfolio {
-    height: 1800px;
-  }
-
-  .portfolio-container {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    gap: 20px;
-    margin: 20px;
-  }
-
-  .portfolio-card1 {
-    grid-column: auto;
-    grid-row: auto;
-    height: 23em;
-    width: 23em;
-  }
-
-  .portfolio-card2 {
-    grid-column: auto;
-    grid-row: auto;
-    height: 23em;
-    width: 23em;
-  }
-
-  .portfolio-card3 {
-    grid-column: auto;
-    grid-row: auto;
-    height: 23em;
-    width: 23em;
-  }
-
-  .portfolio-card4 {
-    grid-column: auto;
-    grid-row: auto;
-    height: 23em;
-    width: 23em;
-  }
-
-  .portfolio-button {
-    margin-top: 2px;
-  }
-
-  #contact {
-    height: 450px;
-  }
-
-  #contact p {
-    font-size: 3.6vw;
-    padding: 15px 40px;
-  }
-
-  .contact-email {
-    font-size: 4vw;
-  }
-
-  .fa-brands {
-    padding: 1.2em;
-  }
-
-  #footer {
-    height: 30px;
-  }
-
-  #footer p {
-    font-size: 3.3vw;
-  }
 }
 
 /* Media query for laptops, larger tablets, and smaller desktops*/
 @media only screen and (min-width: 769px) and (max-width: 1279px) {
   header img {
-    width: 15%;
+    width: 13%;
   }
 
   .primary-navigation[data-state="closed"] {
@@ -606,8 +479,6 @@ h2 {
   }
 
   .site-nav a {
-    font-size: 2.8vw;
-    padding: 0.5em 0.8em;
     color: #f7702d;
   }
 
@@ -625,144 +496,6 @@ h2 {
 
   .menu-toggle {
     display: none;
-  }
-
-  #main {
-    padding-top: 6.5em;
-    height: 800px;
-  }
-
-  h1 {
-    font-size: 8vw;
-  }
-
-  #main p {
-    font-size: 3.5vw;
-    padding: 50px 50px;
-  }
-
-  #about {
-    height: 1700px;
-  }
-
-  #about p {
-    font-size: 3.5vw;
-    padding: 50px 50px;
-  }
-
-  .fa-solid {
-    padding: 1em 1em;
-  }
-
-  h2 {
-    font-size: 6vw;
-  }
-
-  #portfolio {
-    height: 1800px;
-  }
-
-  .portfolio-container {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    gap: 20px;
-    margin: 20px;
-  }
-
-  .portfolio-card1 {
-    grid-column: auto;
-    grid-row: auto;
-    height: 22em;
-    width: 22em;
-  }
-
-  .portfolio-card2 {
-    grid-column: auto;
-    grid-row: auto;
-    height: 22em;
-    width: 22em;
-  }
-
-  .portfolio-card3 {
-    grid-column: auto;
-    grid-row: auto;
-    height: 23em;
-    width: 22em;
-  }
-
-  .portfolio-card4 {
-    grid-column: auto;
-    grid-row: auto;
-    height: 22em;
-    width: 22em;
-  }
-
-  .portfolio-button {
-    margin-top: 2px;
-  }
-
-  #contact {
-    height: 550px;
-  }
-
-  #contact p {
-    font-size: 3.5vw;
-    text-align: left;
-    padding: 10px 50px;
-  }
-
-  .contact-email {
-    font-size: 3.5vw;
-  }
-
-  #footer {
-    height: 50px;
-  }
-
-  #footer p {
-    font-size: 2.8vw;
-  }
-}
-
-/* Media query for laptops, larger tablets, and smaller desktops to adjust for portfolio cards in 2 columns*/
-@media only screen and (min-width: 950px) and (max-width: 1279px) {
-  #portfolio {
-    height: 1200px;
-  }
-
-  .portfolio-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 50px;
-    margin: 60px 25px;
-  }
-
-  .portfolio-card1 {
-    grid-column: 1;
-    grid-row: 1 / 2;
-    height: 24em;
-    width: 24em;
-  }
-
-  .portfolio-card2 {
-    grid-column: 2;
-    grid-row: 1 / 2;
-    height: 24em;
-    width: 24em;
-  }
-
-  .portfolio-card3 {
-    grid-column: 1;
-    grid-row: 2 / 3;
-    height: 24em;
-    width: 24em;
-  }
-
-  .portfolio-card4 {
-    grid-column: 2;
-    grid-row: 2 / 3;
-    height: 24em;
-    width: 24em;
   }
 }
 
@@ -783,8 +516,6 @@ h2 {
   }
 
   .site-nav a {
-    font-size: 2vw;
-    padding: 0.5em 1em;
     color: #f7702d;
   }
 
@@ -804,100 +535,23 @@ h2 {
     display: none;
   }
 
-  #main {
-    padding-top: 9em;
-    height: 900px;
-  }
-
-  h1 {
-    font-size: 7vw;
-  }
-
-  #main p {
-    font-size: 3vw;
-    padding: 60px 70px;
-  }
-
-  #about {
-    height: 1600px;
-  }
-
-  h2 {
-    font-size: 5vw;
-  }
-
-  #about img {
-    width: 40%;
-    height: auto;
-  }
-
-  #about p {
-    font-size: 2.5vw;
-    padding: 30px 60px;
-  }
-
-  .fa-solid {
-    align-items: center;
-    padding: 1.5em;
-  }
-
-  #portfolio {
-    height: 1400px;
-  }
-
-  .portfolio-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 80px;
-    margin: 80px 40px;
-  }
-
-  .portfolio-card1 {
+  .doughnut {
     grid-column: 1;
-    grid-row: 1 / 2;
-    height: 26em;
-    width: 26em;
+    grid-row: 1;
   }
 
-  .portfolio-card2 {
+  .travel {
     grid-column: 2;
-    grid-row: 1 / 2;
-    height: 26em;
-    width: 26em;
+    grid-row: 1;
   }
 
-  .portfolio-card3 {
+  .ski {
     grid-column: 1;
-    grid-row: 2 / 3;
-    height: 26em;
-    width: 26em;
+    grid-row: 2;
   }
 
-  .portfolio-card4 {
+  .invest {
     grid-column: 2;
-    grid-row: 2 / 3;
-    height: 26em;
-    width: 26em;
-  }
-
-  #contact {
-    height: 600px;
-  }
-
-  #contact p {
-    font-size: 2.8vw;
-    padding: 30px 50px;
-  }
-
-  .contact-email {
-    font-size: 2.8vw;
-  }
-
-  #footer {
-    height: 50px;
-  }
-
-  #footer p {
-    font-size: 2vw;
+    grid-row: 2;
   }
 }

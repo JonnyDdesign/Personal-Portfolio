@@ -9,8 +9,6 @@
   <link rel="icon" type="image/png/webp" href="images/Favicon.webp">
   <link rel="stylesheet" type="text/css" href="style.css?v=3">
   <link href="assets/all.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/ccc6ace57d.js" crossorigin="anonymous"></script>
-  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -32,25 +30,32 @@
         </nav>
     </div>
   </header>
+
   <main id="main">
     <h1 class="fadeInUp-animation">Welcome!</h1>
-    <p>You have just landed at my design studio.
-    Enjoy the color scheme representing a serene Arizona desert sunset,
-    along with the colors of my hometown favorite basketball team, the Phoenix Suns.
-    Scroll to learn about me, view my portfolio, and connect with me.
-    </p>
+    <p>You have just landed at Jon Desserres' portfolio page. Enjoy the color scheme representing a serene Arizona desert sunset, along with the colors of my hometown favorite basketball team, the Phoenix Suns. Scroll to learn about me, view my portfolio, and connect with me.</p>
+    <img
+      srcset="images/webdev_320.webp 320w,
+              images/webdev_640.webp 640w,
+              images/webdev_320.webp 1024w"
+      sizes="(max-width: 320px) 320px,
+             (max-width: 640px) 640px,
+             (max-width: 1024px) 1024px"
+      src="images/webdev_320.webp" 
+      alt="outline of computer with code syntax">
   </main>
 
   <section id="about">
     <h2>About Me</h2>
-      <img src="images/me.webp" alt="portrait of Jon Desserres">
-      <p>Hi! I'm Jon Desserres, a web designer and developer, based in Chandler, Arizona. 
-        After working as a teacher for five years and commercial real estate appraiser for nearly six years,
-        I’ve decided to take the leap to pursue a career in web development.
-        My journey began on Codecademy, and my knowledge continues to expand and develop as time goes on. 
-        I love to learn new technologies and look forward to working together to create amazing things. Outside of developing,
-        I enjoy spending time with my family, watching and playing sports, being a car enthusiast, animal lover, cooking, baking,
-        and photography.</p>
+    <img srcset="images/me_320.webp 320w,
+                 images/me_640.webp 640w,
+                 images/me_1024.webp 1024w"
+         sizes="(max-width: 320px) 320px,
+                (max-width: 640px) 640px,
+                (max-width: 1024px) 1024px"
+         src="images/me_320.webp"
+         alt="portrait of Jon Desserres">
+      <p>Hi! I'm Jon Desserres, a web designer and developer, based in Chandler, Arizona. After working as a teacher for five years and commercial real estate appraiser for nearly six years, I’ve decided to take the leap to pursue a career in web development. My journey began on Codecademy, and my knowledge continues to expand and develop as time goes on. I love to learn new technologies and look forward to working together to create amazing projects. Outside of developing, I enjoy spending time with my family, watching and playing sports, being a car enthusiast, animal lover, cooking, baking, and photography.</p>
         <i class="fa-solid fa-people-roof fa-xl" style="color: #ffffff;"></i>
         <i class="fa-solid fa-baseball fa-xl" style="color: #f7702d;"></i>
         <i class="fa-solid fa-car fa-xl" style="color: #ffffff;"></i>
@@ -63,25 +68,25 @@
   <section id="portfolio">
     <h2>Portfolio</h2>
       <div class="portfolio-container">
-        <div class="portfolio-card1 reveal">
-          <img src="images/AZDesertDesigner Snapshot.webp" alt="preview of AZDesertDesigner landing page displayed on a laptop" style="width:100%">
-          <p>A photography site I designed and developed utilizing HTML, CSS, and JavaScript.</p>
-          <a target="_blank" class="portfolio-button" href="https://azdesertdesigner.com">Link Here<a/>
+        <div class="portfolio-card doughnut reveal">
+          <img src="images/Dapper Dane's Doughnuts Snapshot.webp" alt="preview of Dapper Dane's Doughnuts landing page displayed on a laptop and mobile phone">
+          <p>This website was inspired by my son and his love for doughnuts. I wanted to incorporate fun and lively colors and designed a logo using an AI generated image with Canva. I developed the site utilizing HTML and CSS, with a goal of being visually appealing, fast, and responsive.</p>
+          <a target="_blank" class="portfolio-button" href="https://dapperdanesdoughnuts.com">View Site<a/>
         </div>
-        <div class="portfolio-card2 reveal">
-          <img src="images/The Summit Snapshot.webp" alt="preview of The Summit at Mount Lemmon landing page displayed on a laptop" style="width:100%">
-          <p>A ski resort site I designed and developed utilizing HTML, CSS, and JavaScript.</p>
-          <a target="_blank" class="portfolio-button" href="https://jonnyddesign.github.io/TheSummitAtMountLemmon/">Link Here<a/>
+        <div class="portfolio-card travel reveal">
+          <img src="images/Traveling Around AZ Snapshot.webp" alt="preview of the Traveling Around AZ landing page displayed on a laptop and mobile device" style="width:100%">
+          <p>If you have not guessed by now, I love <span style="color: #f7702d;">ARIZONA</span> and am a proud native Arizonan! So why not develop a travel blog showcasing the beautiful state of Arizona. Join me in a journey exploring the state and finding cool spots that make Arizona, Arizona. I designed the logo using Canva, incorporated colors representing AZ, and overall wanted to create a responsive site that anyone can access and enjoy. I developed the site with HTML, CSS, and JavaScript.</p>
+          <a target="_blank" class="portfolio-button" href="https://travelingaroundaz.com">View Site<a/>
         </div>
-        <div class="portfolio-card3 reveal">
-          <img src="images/Traveling Around AZ Snapshot.webp" alt="preview of the Traveling Around AZ landing page displayed on a laptop" style="width:100%">
-          <p>A travel blog site I designed and developed to using HTML, CSS, and JavaScript.</p>
-          <a target="_blank" class="portfolio-button" href="https://travelingaroundaz.com">Link Here<a/>
+        <div class="portfolio-card ski reveal">
+          <img src="images/The Summit at Mount Lemmon Snapshot.webp" alt="preview of The Summit at Mount Lemmon landing page displayed on a laptop and mobile device" style="width:100%">
+          <p>The local ski spot in Tucson, Arizona is a quaint little spot called Mount Lemmon. I have fond memories of getting out onto that snowy mountain and shredding the slopes. Therefore, I had to create a website for my childhood ski resort. I designed the logo with Canva, and developed the site using HTML, CSS, and JavaScript.</p>
+          <a target="_blank" class="portfolio-button" href="https://jonnyddesign.github.io/TheSummitAtMountLemmon/">View Site<a/>
         </div>
-        <div class="portfolio-card4 reveal">
-          <img src="images/D&S Investments Snapshot.webp" alt="preview of D&S Investment Advisors landing page" style="width:100%">
-          <p>An investment site I designed and developed using HTML, CSS, and JavaScript.</p>
-          <a target="_blank" class="portfolio-button" href="https://dandsinvestment.com">Link Here<a/>
+        <div class="portfolio-card invest reveal">
+          <img src="images/D&S Investments Snapshot.webp" alt="preview of D&S Investment Advisors landing page displayed on a laptop and mobile device" style="width:100%">
+          <p>Black, white, and gold are three colors that I envisioned for an elegant and sophisticated site. And why not create an investment site whose name was inspired by the initials of my children. As for now, the site represents a landing page with additional pages coming soon. The site was designed and developed using HTML and CSS.</p>
+          <a target="_blank" class="portfolio-button" href="https://dandsinvestment.com">View Site<a/>
         </div>
     </div>
   </section>
@@ -89,15 +94,27 @@
   <section id="contact">
     <h2>Connect With Me</h2>
     <p>Have an idea of something you would like to create?
-    Send me an email and let's see what we can create together.</p>
-    <a href="mailto:jondesserres@gmail.com" class="contact-email">jondesserres@gmail.com</a><br>
+      Send me an email and let's see what we can create together.</p>
+    <form onsubmit="emailSend(); reset(); return false;">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email" placeholder="Enter your email" required><br>
+      <label for="message">Message:</label><br>
+      <textarea rows="5" cols="50" id="message" name="message" placeholder="Enter your message" required></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
     <a href="https://github.com/JonnyDdesign" aria-label="GitHub"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i></a>
     <a href="https://www.linkedin.com/in/jon-desserres-65b343282/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2xl" style="color: #f7702d;"></i></a>
     <a href="https://codepen.io/JonnyDdesign" aria-label="Codepen"><i class="fa-brands fa-codepen fa-2xl" style="color: #ffffff;"></i></a>
   </section>
 
   <footer id="footer">
-    <p>Created by JonnyDdesign &copy;2023</p>
+    <p>Created by JonnyDdesign &copy;2024</p>
   </footer>
+
+  <script src="https://kit.fontawesome.com/ccc6ace57d.js" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
