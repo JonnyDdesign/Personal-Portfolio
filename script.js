@@ -34,25 +34,3 @@ function reveal() {
   }
 
 window.addEventListener("scroll", reveal);
-
-function emailSend() {
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var message = document.getElementById('message').value;
-
-  var messageBody = "Name " + name + 
-  "<br/> Email " + email +
-  "<br/> Message " + message;
-
-  Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "jondesserres@gmail.com",
-    Password : "6EC49C548DAA12B9573567639126DAB49DC9",
-    To : 'jondesserres@gmail.com',
-    From : "jondesserres@gmail.com",
-    Subject : "New message from JonnyDdesign",
-    Body : messageBody
-}).then(
-  message => alert(message)
-);
-}

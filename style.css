@@ -185,6 +185,12 @@ h1 {
   text-align: center;
 }
 
+.thank-you {
+  margin: 10rem auto;
+  text-align: center;
+  color: purple;
+}
+
 h2 {
   font-family: 'Acme', serif;
   font-size: clamp(2rem, 5vw, 4rem);

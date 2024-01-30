@@ -95,13 +95,19 @@
     <h2>Connect With Me</h2>
     <p>Have an idea of something you would like to create?
       Send me an email and let's see what we can create together.</p>
-    <form onsubmit="emailSend(); reset(); return false;">
+    <form
+      target="_blank"
+      action="https://formsubmit.co/jondesserres@gmail.com"
+      method="POST"
+    >
       <label for="name">Name:</label><br>
       <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
       <label for="email">Email:</label><br>
       <input type="text" id="email" name="email" placeholder="Enter your email" required><br>
       <label for="message">Message:</label><br>
       <textarea rows="5" cols="50" id="message" name="message" placeholder="Enter your message" required></textarea><br><br>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://jonnyddesign.com/thankyou.html">
       <input type="submit" value="Submit">
     </form>
     <a href="https://github.com/JonnyDdesign" aria-label="GitHub"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i></a>
@@ -115,6 +121,5 @@
 
   <script src="https://kit.fontawesome.com/ccc6ace57d.js" crossorigin="anonymous"></script>
   <script src="script.js" defer></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
