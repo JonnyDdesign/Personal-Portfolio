@@ -401,7 +401,7 @@ h3 {
 }
 
 .portfolio-card p {
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: clamp(1rem, 1vw, 1.5rem);
   margin: 1em 1em;
   color: white;
 }
@@ -509,6 +509,10 @@ input[type=submit]:hover {
 
 .fa-brands {
   padding: 0 30px 75px 30px;
+}
+
+#contact i:hover {
+  opacity: 0.6;
 }
 
 /*Footer section styling*/
